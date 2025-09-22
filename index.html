@@ -3,10 +3,166 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Modern Calculator</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<script src="script.js"></script>
+		<main
+			class="calculator__wrapper"
+			role="application"
+			aria-label="Calculator"
+		>
+			<div class="display" role="region" aria-label="Calculator display">
+				<div
+					class="display__previous"
+					aria-label="Previous calculation"
+				>
+					<span class="operation"></span>
+				</div>
+				<div class="display__current" aria-label="Current value">
+					<span class="total">0</span>
+				</div>
+			</div>
+			<div class="buttons">
+				<div class="row">
+					<button
+						class="button button__clear button__clear--all"
+						data-action="clear-all"
+					>
+						AC
+					</button>
+					<button class="button button__clear" data-action="clear">
+						C
+					</button>
+					<button
+						class="button button__operator"
+						data-action="operator"
+						data-operator="/"
+					>
+						÷
+					</button>
+					<button
+						class="button button__operator"
+						data-action="operator"
+						data-operator="*"
+					>
+						×
+					</button>
+				</div>
+				<div class="row">
+					<button
+						class="button button__number"
+						data-action="number"
+						data-number="7"
+					>
+						7
+					</button>
+					<button
+						class="button button__number"
+						data-action="number"
+						data-number="8"
+					>
+						8
+					</button>
+					<button
+						class="button button__number"
+						data-action="number"
+						data-number="9"
+					>
+						9
+					</button>
+					<button
+						class="button button__operator"
+						data-action="operator"
+						data-operator="-"
+					>
+						-
+					</button>
+				</div>
+				<div class="row">
+					<button
+						class="button button__number"
+						data-action="number"
+						data-number="4"
+					>
+						4
+					</button>
+					<button
+						class="button button__number"
+						data-action="number"
+						data-number="5"
+					>
+						5
+					</button>
+					<button
+						class="button button__number"
+						data-action="number"
+						data-number="6"
+					>
+						6
+					</button>
+					<button
+						class="button button__operator"
+						data-action="operator"
+						data-operator="+"
+					>
+						+
+					</button>
+				</div>
+				<div class="row">
+					<button
+						class="button button__number"
+						data-action="number"
+						data-number="1"
+					>
+						1
+					</button>
+					<button
+						class="button button__number"
+						data-action="number"
+						data-number="2"
+					>
+						2
+					</button>
+					<button
+						class="button button__number"
+						data-action="number"
+						data-number="3"
+					>
+						3
+					</button>
+					<button
+						class="button button__equals"
+						data-action="equals"
+						rowspan="2"
+					>
+						=
+					</button>
+				</div>
+				<div class="row">
+					<button
+						class="button button__number button__zero"
+						data-action="number"
+						data-number="0"
+					>
+						0
+					</button>
+					<button
+						class="button button__decimal"
+						data-action="decimal"
+					>
+						.
+					</button>
+				</div>
+			</div>
+		</main>
+
+		<script src="index.js"></script>
 	</body>
 </html>
