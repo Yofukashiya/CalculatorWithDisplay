@@ -90,6 +90,6 @@ buttons.forEach((button) => {
 				currentValue = currentValue.slice(0, -1);
 				displayValue.textContent = currentValue || "0";
 			}
-		}
+		} 
 	});
 });
